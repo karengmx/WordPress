@@ -19,3 +19,9 @@ if ( ! isset( $wp_did_header ) ) {
 	require_once( ABSPATH . WPINC . '/template-loader.php' );
 
 }
+@package WordPress
+	@var bool
+ */
+define('WP_USE_THEMES', true);
+/** Loads the WordPress Environment and Template */
+require( dirname( __FILE__ ) . '/wp-blog-header.php' );
